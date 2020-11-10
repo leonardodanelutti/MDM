@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Condizioni</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="Description" content="la storia dell'azienda artigiana mdm (mdmsnc), produzione di divani a forma di auto, fusti di divani e montaggio. Falegnami/falegnameria vicino a Udine, Treppo Grande">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/cccae52293.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-66NHCKN3NE"></script>
+    <script>function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-66NHCKN3NE');
+</script>
+  </head>
+  <body>
+    <div id="Dashboard"><br>
+      <div id="Logo">
+        <img id="a" alt="a" src="Immagine 2020-09-24 192646.png">
+      </div>
+      <div id="Dashboard_table">
+        <table class="Dash_table">
+          <tr>
+            <td><a href="#" class="tool">Home</a></td>
+            <td><a href="chi siamo.html" class="tool">Chi siamo</a></td>
+            <td><a href="prodotti.html" class="tool">Prodotti</a></td>
+            <td><a href="contatti.html" class="tool">Contatti</a></td>
+          </tr>
+          <tr><td><div id="lineetta"></div></td><td></td><td></td><td></td></tr>
+        </table>
+      </div>
+    </div>
+    <!-- Quando è piccolo:
+    <div class="topnav">
+    <div id="Logo_2">
+      <a href="#home" class="active"><img id="a" src="Immagine 2020-09-24 192646.png"></a>
+    </div>
+
+    <div id="myLinks">
+      <a href="#news" class="list">News</a>
+      <a href="#contact" class="list">Contact</a>
+      <a href="#about" class="list">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+</div> -->
+    <script>
+    if($(window).width() < 750) {
+        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='a' src='Immagine 2020-09-24 192646.png'></a></div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'</i></a></div>";
+    } else {
+        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='a' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td></td><td><div id='lineetta'></div></td><td></td><td></td></tr></table></div>";
+    }
+    $(window).on('resize', function() {
+      if($(window).width() < 750) {
+        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='a' src='Immagine 2020-09-24 192646.png'></a></div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'></i></a></div>";
+      } else {
+        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='a' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td></td><td><div id='lineetta'></div></td><td></td><td></td></tr></table></div>";
+      }
+    })
+    </script>
+    <div id="chi_siamo">
+      <h1 style="margin-top: 25px;">Chi siamo</h1>
+      <img id="esterni" alt="esterni" src="foto/fed09024-8932-4b77-b9ac-3345ede2e0ac.jpg">
+      <br><h2><font family="Raleway" id="nstrz" style="font-weight: 100;">Questa è la nostra zienda bla bla bla bla bla blackbla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</font></h2>
+    </div>
+    <br>
+    <div id="end">
+      <hr>
+      <table class="center">
+        <tr><td><h3 class="prod_text3">MDM</h3></td></tr>
+        <tr><td>
+          <h4 class="prod_text2">
+          <b>COME TROVARCI</b><br>
+          </h4>
+          <h5 class="prod_text2">
+          <b><i class="fas fa-map-marker-alt"></i> Indirizzo</b><br>
+          Via dei Colli, 8   –   33030 Treppo Grande UD<br><br>
+          <b><i class="fas fa-clock"></i> Orari</b><br>
+          Lunedì—Venerdì: 8:00 AM–17:00 PM<br>
+          Sabato: 8:00 AM–12:00 AM
+          </h5>
+        </td>
+        <td>
+          <h4 class="prod_text2"><b>CONTATTI</b></h4>
+          <b><h5 class="prod_text2"><i class="fas fa-envelope"></i> MAIL</b><br>
+          mdmsnc@hotmail.it<br><br>
+          <i class="fas fa-phone"></i> <b>TELEFONO</b><br>
+          +39 3385887591</h5>
+        </td>
+        <td style="padding-top: 15%;">
+          <a href="https://www.facebook.com/mdmsnc" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+        </td></tr>
+      </table>
+    </div>
+  </body>
+</html>

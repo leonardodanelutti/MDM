@@ -4,8 +4,25 @@
     <title>MDM</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="Description" content="Homepage della pagina web dell'azienda artigiana mdm (mdmsnc), produzione di divani a forma di auto, fusti di divani e montaggio. Falegnami/falegnameria vicino a Udine, Treppo Grande">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-66NHCKN3NE"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-66NHCKN3NE');
+</script>
     <script src="https://kit.fontawesome.com/cccae52293.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -19,14 +36,41 @@
             <td><a href="#" class="tool">Home</a></td>
             <td><a href="chi siamo.html" class="tool">Chi siamo</a></td>
             <td><a href="prodotti.html" class="tool">Prodotti</a></td>
-            <td><a href="servizi.html" class="tool">Servizi</a></td>
             <td><a href="contatti.html" class="tool">Contatti</a></td>
-            <td><a href="portfolio.html" class="tool">Portfolio</a></td>
           </tr>
-          <tr><td><div id="lineetta"></div></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td><div id="lineetta"></div></td><td></td><td></td><td></td></tr>
         </table>
       </div>
     </div>
+    <!-- Quando è piccolo:
+    <div class="topnav">
+    <div id="Logo_2">
+      <a href="#home" class="active"><img id="a" src="Immagine 2020-09-24 192646.png"></a>
+    </div>
+
+    <div id="myLinks">
+      <a href="#news" class="list">News</a>
+      <a href="#contact" class="list">Contact</a>
+      <a href="#about" class="list">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+</div> -->
+    <script>
+    if($(window).width() < 750) {
+        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='a' src='Immagine 2020-09-24 192646.png'></a></div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'</i></a></div>";
+    } else {
+        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='a' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td><div id='lineetta'></td><td></td><td></td><td></div></td></tr></table></div>";
+    }
+    $(window).on('resize', function() {
+      if($(window).width() < 750) {
+        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='a' src='Immagine 2020-09-24 192646.png'></a></div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'></i></a></div>";
+      } else {
+        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='a' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td><div id='lineetta'></td><td></td><td></td><td></td></tr></table></div>";
+      }
+    })
+    </script>
 
     <div class="CSSgal">
     <div id="fixed"></div>
@@ -37,17 +81,17 @@
       <s id="s4"></s>
 
       <div class="slider">
-        <div style="background-image: url(http://localhost/mdm/foto/pexels-thijs-van-der-weide-1094770.jpg);">
-          <h1>PURE CSS SLIDESHOW</h1>
+        <div style="background-image: url(http://localhost/mdm/Danelutti%20Divano%20Porche-3200.jpg);">
+          <h1><a href="prodotti.html">CARSOFA</a></h1>
 		    </div>
-        <div style="background:#85b;">
-			    <h2>Slide 2</h2>
+        <div style="background-image: url(http://localhost/mdm/Danelutti%20Divano%20Porche-3211.jpg);">
+			    <h2><a href="prodotti.html">IL DIVANO AUTO</a></h2>
 		    </div>
-        <div style="background:#e95;">
-			    <h2>Slide 3</h2>
+        <div style="background-image: url(http://localhost/mdm/123.jpg);">
+			    <h2><a href="contatti.html">I NOSTRI FUSTI</a></h2>
 		    </div>
-        <div style="background:#e59;">
-			    <h2>Slide 4</h2>
+        <div style="background-image: url(http://localhost/mdm/WhatsApp%20Image%202020-11-07%20at%2015.46.17.jpeg);">
+			    <h2><a href="contatti.html">Slide 4</a></h2>
 		    </div>
       </div>
 
@@ -95,33 +139,90 @@
           </td>
         </tr>
       </table>
+      <!-- <table class="pro_table">
+        <tr>
+          <td>
+            <div id="lineetta2"></div><h3 class="prod_text1">AREE DI INTErvento</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font class="prod_text0">OPZIONE 1</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font class="prod_text2">MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font class="prod_text0">OPZIONE 2</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font class="prod_text2">MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font class="prod_text0">OPZIONE 3</font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <font class="prod_text2">MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font>
+          </td>
+        </tr>
+      </table> -->
     </div>
+    <script>
+    if($(window).width() < 975) {
+        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>AREE DI INTErvento</h3></td></tr><tr><td><font class='prod_text0'>OPZIONE 1</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr><tr><td><font class='prod_text0'>OPZIONE 2</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr><tr><td><font class='prod_text0'>OPZIONE 3</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr></table>";
+    } else {
+      document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>AREE DI INTErvento</h3></td></tr><tr><th><font class='prod_text0'>OPZIONE 1</font></td><th><font class='prod_text0'>OPZIONE 2</font></td><th><font class='prod_text0'>OPZIONE 3</font></td></tr><tr><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td>  </tr></table>";
+    }
+    $(window).on('resize', function() {
+      if($(window).width() < 975) {
+        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>AREE DI INTErvento</h3></td></tr><tr><td><font class='prod_text0'>OPZIONE 1</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr><tr><td><font class='prod_text0'>OPZIONE 2</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr><tr><td><font class='prod_text0'>OPZIONE 3</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr></table>";
+      } else {
+        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>AREE DI INTErvento</h3></td></tr><tr><th><font class='prod_text0'>OPZIONE 1</font></td><th><font class='prod_text0'>OPZIONE 2</font></td><th><font class='prod_text0'>OPZIONE 3</font></td></tr><tr><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td>  </tr></table>";
+      }
+    })
+    </script>
+    <!--
     <div class="back-to-top-wrapper">
       <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"><b>^</b></a>
-    </div>
+    </div>-->
     <div id="obbiettivo">
-      <table class="pro_table" style="padding-top: 80px;">
-        <tr>
-          <td><div id="lineetta2" style="background-color: #f6f6f6;"></div></td>
-        </tr>
-        <tr>
-          <td class="prod_text3">PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td>
-          <td class="prod_text2" style="color: #333333; padding-top: 20px;" >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td>
-        </tr>
-      </table>
     </div>
+    <script>
+    if($(window).width() < 975) {
+        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td></tr><tr><td class='prod_text2' style='color: black; padding-top: 20px;' >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td></tr></table>";
+    } else {
+      document.getElementById("obbiettivo").innerHTML = "<table class='pro_table' style='padding-top: 80px;'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td><td class='prod_text2' style='color: black; padding-top: 20px;' >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td></tr></table>";
+    }
+    $(window).on('resize', function() {
+      if($(window).width() < 975) {
+        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td></tr><tr><td class='prod_text2' style='color: black; padding-top: 20px;' >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td></tr></table>";
+      } else {
+        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table' style='padding-top: 80px;'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td><td class='prod_text2' style='color: black; padding-top: 20px;' >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td></tr></table>";
+      }
+    })
+    </script>
     <div id="black">
     </div>
     <div id="agg">
       <div class="parallax">
         <div class="scrt">
           <h3 class="prod_text4">PASSIONE, IMPEGNO E PROFESSIONALITÀ</h3>
-          <h3 class="prod_text4" style="font-size: 15px;">IDEE INNOVATIVE E CREATIVITÀ, PER SUPPORTARE LA TUA ATTIVITÀ DI MARKETING ONLINE E OFFLINE.</h3>
+          <h3 class="prod_text5">IDEE INNOVATIVE E CREATIVITÀ, PER SUPPORTARE LA TUA ATTIVITÀ DI MARKETING ONLINE E OFFLINE.</h3>
         </div>
       </div>
     </div>
     <br><hr>
-    <div id="end">
+    <div id="end" >
       <table class="center">
         <tr><td><h3 class="prod_text3">MDM</h3></td></tr>
         <tr><td>
@@ -130,20 +231,20 @@
           </h4>
           <h5 class="prod_text2">
           <b><i class="fas fa-map-marker-alt"></i> Indirizzo</b><br>
-          Via Squarcians, 9   –   33030 Buia UD<br><br>
+          Via dei Colli, 8   –   33030 Treppo Grande UD<br><br>
           <b><i class="fas fa-clock"></i> Orari</b><br>
-          Lunedì—Sabato: 8:00 AM–17:00 PM<br>
-          Domenica: chiuso
+          Lunedì—Venerdì: 8:00 AM–17:00 PM<br>
+          Sabato: 8:00 AM–12:00 AM
           </h5>
         </td>
         <td>
           <h4 class="prod_text2"><b>CONTATTI</b></h4>
-          <b><h5 class="prod_text2"><i class="fas fa-envelope"></i> MAIL:</b><br>
-          info@gliartigianidellegno.it<br><br>
+          <b><h5 class="prod_text2"><i class="fas fa-envelope"></i> MAIL</b><br>
+          mdmsnc@hotmail.it<br><br>
           <i class="fas fa-phone"></i> <b>TELEFONO</b><br>
-          0432-963147</h5>
+          +39 3385887591</h5>
         </td>
-        <td>
+        <td style="padding-top: 15%;" style="display: none">
           <a href="https://www.facebook.com/mdmsnc" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-google"></a>

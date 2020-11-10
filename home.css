@@ -12,6 +12,12 @@ html {
   }
 }
 
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+
   #a {
   width:100%;}
 
@@ -27,6 +33,14 @@ html {
   font-family: 'Roboto', sans-serif;
   z-index: 10;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 750px) {
+    #Dashboard {
+      height: 60px;
+    }
+    #a {
+    width:100%;}
 }
 
 #fixed {
@@ -53,12 +67,66 @@ z-index: -10;
   font-family: 'Roboto', sans-serif;
 }
 
+#myLinks {
+  display: none;
+  padding: 14px 16px;
+  background-color: #f6f6f6;
+}
+
+.topnav {
+  height: 60px;
+  background-color: white;
+  position: relative;
+  z-index: 11;
+}
+
+.topnav a {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  z-index: 50;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  padding: 0px 0px;
+  background: #4755f1;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+}
+
+.list{
+  padding: 14px 16px;
+}
+
+.icon .fa{
+  margin: 0px 0px;
+}
+
+
 .tool {
   text-decoration: none;
   color: black;
 }
 
 .Dash_table {
+  font: 20px Arial;
   width: 48vmax;
   text-align: center;
 }
@@ -72,6 +140,13 @@ z-index: -10;
   width: 50px;
   padding-left: 18%;
 }
+
+#Logo_2{
+  width: 50px;
+  height: 60px;
+  padding-left: 5%;
+}
+
 
 #lineetta{
   background-color: #0054F1;
@@ -88,14 +163,14 @@ z-index: -10;
   width: calc(100% + 16px);
   left: -8px;
   top: -8px;
-	height: calc(32vmax + 90px); /* Or set a fixed height */
+	height: calc(36vmax + 90px); /* Or set a fixed height */
 }
 
 /* SLIDER */
 
 .CSSgal .slider {
   position: absolute;
-	height: 32vmax;
+	height: 36vmax;
 	white-space: nowrap;
 	font-size: 0;
 	transition: 0.8s;
@@ -227,7 +302,7 @@ z-index: -10;
   text-shadow: 3px 3px #000000;
   font-family: 'Raleway', sans-serif;
 	margin-top: 14vmax;
-  margin-left: -8%;
+  margin-left: -20%;
 	letter-spacing: -0.06em;
 	word-spacing: 0.2em;
 	font-size: 5vmax;
@@ -257,7 +332,7 @@ z-index: -10;
 
 .pro_table{
   padding-top: 3%;
-  width: 75%;/*MODIFICARE QUESTO*/
+  width: calc(700px + 20%);/*MODIFICARE QUESTO*/
   margin: auto;
   font-family: 'Raleway', sans-serif;
 }
@@ -303,16 +378,16 @@ z-index: -10;
   left: -8px;
   top: -8px;
   padding-bottom: 80px;
-  background-color: #0054F1;
+  background-color: #1a6aff;
 }
 
 .prod_text3 {
   text-align: left;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 800;
   text-transform: uppercase;
   color: #333333;
-  width: 66%;
+  width: 70%;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -340,7 +415,7 @@ z-index: -10;
 }
 
 .parallax {
-  background-image: url('http://localhost/mdm/foto/Tileable%20Fine%20Wood%20Texture2.jpg');
+  background-image: url('http://localhost/mdm/Tileable%20Fine%20Wood%20Texture2.jpg');
   background-attachment: fixed;
   z-index: 20;
   height: 40%;
@@ -349,15 +424,30 @@ z-index: -10;
 
 .scrt {
   padding-top: 3%;
-  width: 1210px;/*MODIFICARE QUESTO*/
   margin: auto;
   font-family: 'Raleway', sans-serif;
   padding-bottom: 3%;
 }
 
+h3 {
+    display: block;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
 .prod_text4 {
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.prod_text5 {
+  text-align: center;
+  font-size: 15px;
   font-weight: 800;
   text-transform: uppercase;
   color: #333333;
@@ -422,7 +512,7 @@ z-index: -10;
   top: 100vh;
   right: 3rem;
   bottom: -5em;
-  height: 160%;
+  height: 180%;
   width: 3em;
   pointer-events: none;
   z-index: 100;
@@ -474,7 +564,7 @@ z-index: -10;
   font-family: 'Syncopate', sans-serif;
   position: relative;
   background-color: #4755f1;
-  top: 100px;
+  top: 70px;
   left: -8px;
   width: calc(100% + 16px);
   text-align: center;
@@ -483,10 +573,11 @@ z-index: -10;
 }
 
  #tutto {
+   padding-bottom: 120px;
    position: relative;
    width: 100%;
    left: 0%;
-   top: 125px;
+   top: 95px;
  }
 
  #mainimg {
@@ -518,6 +609,7 @@ z-index: -10;
 #c {
   width: 5vw;
   height: 5vw;
+  object-fit: cover;
 }
 
  #description {
@@ -565,12 +657,210 @@ h1 {
   top: 80px;
   width: 100%;
   left: 0px;
-  height: 200%;
+  height: calc(100% - 80px);
 }
 
 #map {
-  height: 35%;
+  height: 75%;
   /* The height is 400 pixels */
   width: 65%;
   /* The width is the width of the web page */
+}
+
+#cose{
+  position: absolute;
+  top: calc(150px + 10%);
+  left: 65%;
+}
+
+#contatti-2{
+  width: 100%;
+}
+
+#chi_siamo{
+  position: relative;
+  top: 80px;
+  width: calc(500px + 20%);
+  height: calc(100% - 80px);
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+#esterni{
+  object-fit: cover;
+  width: 100%;
+}
+
+#nstrz{
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  #map {
+    width: 100%;
+    height: 50vw;
+    /* The width is the width of the web page */
+  }
+
+  #cose{
+    position: relative;
+    top: 20px;
+    margin: auto;
+    left: 0%;
+  }
+
+  #contatti-2{
+    padding-left: 5%
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  #map {
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+  #cose{
+    position: relative;
+    top: 20px;
+    margin: auto;
+    left: 0%;
+    overflow-x:auto;
+  }
+
+  #contatti-2{
+    padding-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+
+  .prod_text0 {
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .prod_text1 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .prod_text2{
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .prod_text3 {
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .prod_text4 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .prod_text5 {
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .back-to-top-wrapper {
+    height: 130%
+  }
+
+  .pro_table{
+    padding-top: 3%;
+    width: 100%;/*MODIFICARE QUESTO*/
+  }
+  #mainimg{
+    width: 100%;
+    height: calc((70vw * 60)/ 100);
+  }
+
+  #carsofa{
+    height: calc((70vw * 60)/ 100);
+  }
+
+  #features{
+    top: 15%;
+  }
+
+  #chi_siamo{
+    width: 100%
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .prod_text0 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .prod_text1 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .prod_text2{
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .prod_text3 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .prod_text4 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .prod_text5 {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .back-to-top-wrapper {
+    height: 200%
+  }
+
+  .pro_table{
+    padding-top: 3%;
+    width: 100%;/*MODIFICARE QUESTO*/
+  }
+  .back-to-top-link {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .back-to-top-wrapper {
+    right: 1rem;
+    height: 150%;
+  }
+
+  #obbiettivo{
+    padding-bottom: 20px;
+  }
+
+  #agg{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .fa{
+    padding: 5px
+  }
+
+  #nstrz{
+    font-size: 17px;
+  }
+
 }
