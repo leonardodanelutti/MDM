@@ -4,7 +4,7 @@
     <title>MDM snc - Falegnameria a Treppo Grande UD</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="Description" content="Homepage della pagina web dell'azienda artigiana mdm (mdmsnc), produzione di divani a forma di auto, fusti di divani e montaggio. Falegnami/falegnameria vicino a Udine, Treppo Grande">
+    <meta name="Description" content="Homepage della pagina web dell'azienda artigiana mdm (mdmsnc), produzione di divani a forma di auto, telai di divani e montaggio. Falegnami/falegnameria vicino a Udine, Treppo Grande">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-66NHCKN3NE"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -30,15 +30,19 @@
       <div id="Logo">
         <img id="a" alt="Logo" src="Immagine 2020-09-24 192646.png">
       </div>
+      <div id="Nome">
+        M.D.M. S.n.c. <br> di Danelutti Maurizio e C.
+      </div>
       <div id="Dashboard_table">
         <table class="Dash_table">
           <tr>
-            <td><a href="#" class="tool">Home</a></td>
+            <td><a href="home.html" class="tool">Home</a></td>
             <td><a href="chi siamo.html" class="tool">Chi siamo</a></td>
             <td><a href="prodotti.html" class="tool">Prodotti</a></td>
+            <td><a href="I nostri telai.html" class="tool">I nostri telai</a></td>
             <td><a href="contatti.html" class="tool">Contatti</a></td>
           </tr>
-          <tr><td><div id="lineetta"></div></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td><div id="lineetta"></div></td></tr>
         </table>
       </div>
     </div>
@@ -59,15 +63,15 @@
 </div> -->
     <script>
     if($(window).width() < 750) {
-        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='Logo' src='Immagine 2020-09-24 192646.png'></a></div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'</i></a></div>";
+        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='Logo' src='Immagine 2020-09-24 192646.png'></a></div><div id='Nome_2'><b>M.D.M. S.n.c.</b> <br> di Danelutti Maurizio e C.</div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='I nostri telai.html' class='list'>I nostri telai</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'</i></a></div>";
     } else {
-        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='Logo' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td><div id='lineetta'></td><td></td><td></td><td></div></td></tr></table></div>";
+        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='Logo' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Nome'><b>M.D.M. S.n.c.</b> <br> di Danelutti Maurizio e C.</div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='I nostri telai.html' class='tool'>I nostri telai</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td><div id='lineetta'></div></td><td></td><td></td><td></td></tr></table></div>";
     }
     $(window).on('resize', function() {
       if($(window).width() < 750) {
-        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='Logo' src='Immagine 2020-09-24 192646.png'></a></div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'></i></a></div>";
+        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='Logo' src='Immagine 2020-09-24 192646.png'></a></div><div id='Nome_2'><b>M.D.M. S.n.c.</b> <br> di Danelutti Maurizio e C.</div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='I nostri telai.html' class='list'>I nostri telai</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'></i></a></div>";
       } else {
-        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='Logo' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td><div id='lineetta'></td><td></td><td></td><td></td></tr></table></div>";
+        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='Logo' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Nome'><b>M.D.M. S.n.c.</b> <br> di Danelutti Maurizio e C.</div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='I nostri telai.html' class='tool'>I nostri telai</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td><div id='lineetta'></div></td><td></td><td></td><td></td></tr></table></div>";
       }
     })
     </script>
@@ -88,10 +92,10 @@
 			    <h2><a href="prodotti.html">IL DIVANO AUTO</a></h2>
 		    </div>
         <div style="background-image: url(https://mdmsnc.it//123.jpg);">
-			    <h2><a href="contatti.html">I NOSTRI FUSTI</a></h2>
+			    <h2><a href="I nostri telai.html">I NOSTRI TELAI</a></h2>
 		    </div>
         <div style="background-image: url(https://mdmsnc.it/WhatsApp%20Image%202020-11-07%20at%2015.46.17.jpeg);">
-			    <h2><a href="contatti.html">Slide 4</a></h2>
+			    <h2><a href="I nostri telai.html">I NOSTRI TELAI</a></h2>
 		    </div>
       </div>
 
@@ -113,81 +117,81 @@
       <table class="pro_table">
         <tr>
           <td>
-            <div id="lineetta2"></div><h3 class="prod_text1">AREE DI INTErvento</h3>
+            <div id="lineetta2"></div><h3 class="prod_text1">LA NOSTRA FALEGNAMERIA</h3>
           </td>
         </tr>
         <tr>
           <th>
-            <font class="prod_text0">OPZIONE 1</font>
+            <font class="prod_text0">TELAI PER DIVANI</font>
           </td>
           <th>
-            <font class="prod_text0">OPZIONE 2</font>
+            <font class="prod_text0">LAVORAZIONE E MATERIALI</font>
           </td>
           <th>
-            <font class="prod_text0">OPZIONE 3</font>
+            <font class="prod_text0">CARSOFA</font>
           </td>
         </tr>
         <tr>
           <td class="prod_text2">
-            MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.
+            Dall’esperienza del nonno Umberto e del papà Giuseppe i fratelli Maurizio e Massimo Danelutti portano avanti l’attività di falegnameria a Treppo Grande e nel ’90 fondano l’ M.D.M. s.n.c. <br>L’azienda si è specializzata nella costruzione di TELAI per l’imbottito quali divani e poltrone in serie ma anche su progetto per pezzi su misura.
+          </td>
+          <td style="width: 50%;" class="prod_text2">
+            La lavorazione viene seguita in tutte le sue fasi con attenzione alla qualità del prodotto, sia artigianalmente per quanto riguarda i dettagli, sia a livello tecnologico per quanto riguarda le strutture fondamentali, eseguite con pantografo e sezionatrice a controllo numerico ed altre attrezzature che consentono di eseguire lavorazioni anche complesse.<br>Le materie prime utilizzate sono prevalentemente legno massello di abete e pioppo, multistrato fenolico di vari spessori, etc.
           </td>
           <td class="prod_text2">
-            MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.
-          </td>
-          <td class="prod_text2">
-            MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.
+            Stai cercando un produttore per un DIVANO-AUTO?<br><br>La nostra falegnameria risponde alla tua richiesta!
           </td>
         </tr>
       </table>
       <!-- <table class="pro_table">
         <tr>
           <td>
-            <div id="lineetta2"></div><h3 class="prod_text1">AREE DI INTErvento</h3>
+            <div id="lineetta2"></div><h3 class="prod_text1">LA NOSTRA FALEGNAMERIA</h3>
           </td>
         </tr>
         <tr>
           <td>
-            <font class="prod_text0">OPZIONE 1</font>
+            <font class="prod_text0">TELAI PER DIVANI</font>
           </td>
         </tr>
         <tr>
           <td>
-            <font class="prod_text2">MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font>
+            <font class="prod_text2">Dall’esperienza del nonno Umberto e del papà Giuseppe i fratelli Maurizio e Massimo Danelutti portano avanti l’attività di falegnameria a Treppo Grande e nel ’90 fondano l’ M.D.M. s.n.c. <br>L’azienda si è specializzata nella costruzione di TELAI per l’imbottito quali divani e poltrone in serie ma anche su progetto per pezzi su misura.</font>
           </td>
         </tr>
         <tr>
           <td>
-            <font class="prod_text0">OPZIONE 2</font>
+            <font class="prod_text0">LAVORAZIONE E MATERIALI</font>
           </td>
         </tr>
         <tr>
           <td>
-            <font class="prod_text2">MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font>
+            <font class="prod_text2">La lavorazione viene seguita in tutte le sue fasi con attenzione alla qualità del prodotto, sia artigianalmente per quanto riguarda i dettagli, sia a livello tecnologico per quanto riguarda le strutture fondamentali, eseguite con pantografo e sezionatrice a controllo numerico ed altre attrezzature che consentono di eseguire lavorazioni anche complesse.<br>Le materie prime utilizzate sono prevalentemente legno massello di abete e pioppo, multistrato fenolico di vari spessori, etc.</font>
           </td>
         </tr>
         <tr>
           <td>
-            <font class="prod_text0">OPZIONE 3</font>
+            <font class="prod_text0">CARSOFA</font>
           </td>
         </tr>
         <tr>
           <td>
-            <font class="prod_text2">MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font>
+            <font class="prod_text2">Stai cercando un produttore per un DIVANO-AUTO?<br><br>La nostra falegnameria risponde alla tua richiesta!</font>
           </td>
         </tr>
       </table> -->
     </div>
     <script>
     if($(window).width() < 975) {
-        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>AREE DI INTErvento</h3></td></tr><tr><td><font class='prod_text0'>OPZIONE 1</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr><tr><td><font class='prod_text0'>OPZIONE 2</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr><tr><td><font class='prod_text0'>OPZIONE 3</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr></table>";
+        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>LA NOSTRA FALEGNAMERIA</h3></td></tr><tr><td><font class='prod_text0'>TELAI PER DIVANI</font></td></tr><tr><td><font class='prod_text2'>Dall’esperienza del nonno Umberto e del papà Giuseppe i fratelli Maurizio e Massimo Danelutti portano avanti l’attività di falegnameria a Treppo Grande e nel ’90 fondano l’ M.D.M. s.n.c. <br>L’azienda si è specializzata nella costruzione di TELAI per l’imbottito quali divani e poltrone in serie ma anche su progetto per pezzi su misura.</font></td></tr><tr><td><font class='prod_text0'>LAVORAZIONE E MATERIALI</font></td></tr><tr><td><font class='prod_text2'>La lavorazione viene seguita in tutte le sue fasi con attenzione alla qualità del prodotto, sia artigianalmente per quanto riguarda i dettagli, sia a livello tecnologico per quanto riguarda le strutture fondamentali, eseguite con pantografo e sezionatrice a controllo numerico ed altre attrezzature che consentono di eseguire lavorazioni anche complesse.<br>Le materie prime utilizzate sono prevalentemente legno massello di abete e pioppo, multistrato fenolico di vari spessori, etc.</font></td></tr><tr><td><font class='prod_text0'>CARSOFA</font></td></tr><tr><td><font class='prod_text2'>Stai cercando un produttore per un DIVANO-AUTO?<br><br>La nostra falegnameria risponde alla tua richiesta!</font></td></tr></table>";
     } else {
-      document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>AREE DI INTErvento</h3></td></tr><tr><th><font class='prod_text0'>OPZIONE 1</font></td><th><font class='prod_text0'>OPZIONE 2</font></td><th><font class='prod_text0'>OPZIONE 3</font></td></tr><tr><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td>  </tr></table>";
+      document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>LA NOSTRA FALEGNAMERIA</h3></td></tr><tr><th><font class='prod_text0'>TELAI PER DIVANI</font></td><th><font class='prod_text0'>LAVORAZIONE E MATERIALI</font></td><th><font class='prod_text0'>CARSOFA</font></td></tr><tr><td class='prod_text2'>Dall’esperienza del nonno Umberto e del papà Giuseppe i fratelli Maurizio e Massimo Danelutti portano avanti l’attività di falegnameria a Treppo Grande e nel ’90 fondano l’ M.D.M. s.n.c. <br>L’azienda si è specializzata nella costruzione di TELAI per l’imbottito quali divani e poltrone in serie ma anche su progetto per pezzi su misura.</td><td style='width: 50%;' class='prod_text2'>La lavorazione viene seguita in tutte le sue fasi con attenzione alla qualità del prodotto, sia artigianalmente per quanto riguarda i dettagli, sia a livello tecnologico per quanto riguarda le strutture fondamentali, eseguite con pantografo e sezionatrice a controllo numerico ed altre attrezzature che consentono di eseguire lavorazioni anche complesse.<br>Le materie prime utilizzate sono prevalentemente legno massello di abete e pioppo, multistrato fenolico di vari spessori, etc.</td><td class='prod_text2'>Stai cercando un produttore per un DIVANO-AUTO?<br><br>La nostra falegnameria risponde alla tua richiesta!</td>  </tr></table>";
     }
     $(window).on('resize', function() {
       if($(window).width() < 975) {
-        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>AREE DI INTErvento</h3></td></tr><tr><td><font class='prod_text0'>OPZIONE 1</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr><tr><td><font class='prod_text0'>OPZIONE 2</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr><tr><td><font class='prod_text0'>OPZIONE 3</font></td></tr><tr><td><font class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</font></td></tr></table>";
+        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>LA NOSTRA FALEGNAMERIA</h3></td></tr><tr><td><font class='prod_text0'>TELAI PER DIVANI</font></td></tr><tr><td><font class='prod_text2'>Dall’esperienza del nonno Umberto e del papà Giuseppe i fratelli Maurizio e Massimo Danelutti portano avanti l’attività di falegnameria a Treppo Grande e nel ’90 fondano l’ M.D.M. s.n.c. <br>L’azienda si è specializzata nella costruzione di TELAI per l’imbottito quali divani e poltrone in serie ma anche su progetto per pezzi su misura.</font></td></tr><tr><td><font class='prod_text0'>LAVORAZIONE E MATERIALI</font></td></tr><tr><td><font class='prod_text2'>La lavorazione viene seguita in tutte le sue fasi con attenzione alla qualità del prodotto, sia artigianalmente per quanto riguarda i dettagli, sia a livello tecnologico per quanto riguarda le strutture fondamentali, eseguite con pantografo e sezionatrice a controllo numerico ed altre attrezzature che consentono di eseguire lavorazioni anche complesse.<br>Le materie prime utilizzate sono prevalentemente legno massello di abete e pioppo, multistrato fenolico di vari spessori, etc.</font></td></tr><tr><td><font class='prod_text0'>CARSOFA</font></td></tr><tr><td><font class='prod_text2'>Stai cercando un produttore per un DIVANO-AUTO?<br><br>La nostra falegnameria risponde alla tua richiesta!</font></td></tr></table>";
       } else {
-        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>AREE DI INTErvento</h3></td></tr><tr><th><font class='prod_text0'>OPZIONE 1</font></td><th><font class='prod_text0'>OPZIONE 2</font></td><th><font class='prod_text0'>OPZIONE 3</font></td></tr><tr><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td><td class='prod_text2'>MediaDesign, frutto di 20 anni di esperienza nello sviluppo di sistemi informativi per le aziende del mobile, è oggi considerato il più semplice, veloce e intuitivo strumento di lavoro a disposizione nel mondo dell’arredamento e in quello della cucina in particolare: risulta infatti il programma di progettazione grafica tridimensionale più utilizzato.</td>  </tr></table>";
+        document.getElementById("prod").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2'></div><h3 class='prod_text1'>LA NOSTRA FALEGNAMERIA</h3></td></tr><tr><th><font class='prod_text0'>TELAI PER DIVANI</font></td><th><font class='prod_text0'>LAVORAZIONE E MATERIALI</font></td><th><font class='prod_text0'>CARSOFA</font></td></tr><tr><td class='prod_text2'>Dall’esperienza del nonno Umberto e del papà Giuseppe i fratelli Maurizio e Massimo Danelutti portano avanti l’attività di falegnameria a Treppo Grande e nel ’90 fondano l’ M.D.M. s.n.c. <br>L’azienda si è specializzata nella costruzione di TELAI per l’imbottito quali divani e poltrone in serie ma anche su progetto per pezzi su misura.</td><td style='width: 50%;' class='prod_text2'>La lavorazione viene seguita in tutte le sue fasi con attenzione alla qualità del prodotto, sia artigianalmente per quanto riguarda i dettagli, sia a livello tecnologico per quanto riguarda le strutture fondamentali, eseguite con pantografo e sezionatrice a controllo numerico ed altre attrezzature che consentono di eseguire lavorazioni anche complesse.<br>Le materie prime utilizzate sono prevalentemente legno massello di abete e pioppo, multistrato fenolico di vari spessori, etc.</td><td class='prod_text2'>Stai cercando un produttore per un DIVANO-AUTO?<br><br>La nostra falegnameria risponde alla tua richiesta!</td>  </tr></table>";
       }
     })
     </script>
@@ -199,15 +203,15 @@
     </div>
     <script>
     if($(window).width() < 975) {
-        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td></tr><tr><td class='prod_text2' style='color: black; padding-top: 20px;' >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td></tr></table>";
+        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>TI ASSISTIAMO IN TUTTE LE FASI DEL PROGETTO</td></tr><tr><td class='prod_text2' style='color: black; padding-top: 20px;' >  I fratelli Danelutti lavorano in un’ottica di collaborazione con i clienti, affiancandoli dal disegno fino alla realizzazione del primo prototipo, mettendo a disposizione la loro pluridecennale esperienza.</td></tr></table>";
     } else {
-      document.getElementById("obbiettivo").innerHTML = "<table class='pro_table' style='padding-top: 80px;'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td><td class='prod_text2' style='color: black; padding-top: 20px;' >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td></tr></table>";
+      document.getElementById("obbiettivo").innerHTML = "<table class='pro_table' style='padding-top: 80px;'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>TI ASSISTIAMO IN TUTTE LE FASI DEL PROGETTO</td><td class='prod_text2' style='color: black; padding-top: 20px;' >  I fratelli Danelutti lavorano in un’ottica di collaborazione con i clienti, affiancandoli dal disegno fino alla realizzazione del primo prototipo, mettendo a disposizione la loro pluridecennale esperienza.</td></tr></table>";
     }
     $(window).on('resize', function() {
       if($(window).width() < 975) {
-        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td></tr><tr><td class='prod_text2' style='color: black; padding-top: 20px;' >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td></tr></table>";
+        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>TI ASSISTIAMO IN TUTTE LE FASI DEL PROGETTO</td></tr><tr><td class='prod_text2' style='color: black; padding-top: 20px;' >  I fratelli Danelutti lavorano in un’ottica di collaborazione con i clienti, affiancandoli dal disegno fino alla realizzazione del primo prototipo, mettendo a disposizione la loro pluridecennale esperienza.</td></tr></table>";
       } else {
-        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table' style='padding-top: 80px;'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>PROGETTIAMO, REALIZZIAMO E GESTIAMO IL TUO BRAND</td><td class='prod_text2' style='color: black; padding-top: 20px;' >Il nostro obiettivo è la soddifazione del cliente attraverso il nostro lavoro, e un ritorno nel più breve tempo possibile del suo investimento.</td></tr></table>";
+        document.getElementById("obbiettivo").innerHTML = "<table class='pro_table' style='padding-top: 80px;'><tr><td><div id='lineetta2' style='background-color: #f6f6f6;'></div></td></tr><tr><td class='prod_text3' style='color: black;'>TI ASSISTIAMO IN TUTTE LE FASI DEL PROGETTO</td><td class='prod_text2' style='color: black; padding-top: 20px;' >  I fratelli Danelutti lavorano in un’ottica di collaborazione con i clienti, affiancandoli dal disegno fino alla realizzazione del primo prototipo, mettendo a disposizione la loro pluridecennale esperienza.</td></tr></table>";
       }
     })
     </script>
@@ -217,14 +221,13 @@
       <div class="parallax">
         <div class="scrt">
           <h3 class="prod_text4">PASSIONE, IMPEGNO E PROFESSIONALITÀ</h3>
-          <h3 class="prod_text5">IDEE INNOVATIVE E CREATIVITÀ, PER SUPPORTARE LA TUA ATTIVITÀ DI MARKETING ONLINE E OFFLINE.</h3>
         </div>
       </div>
     </div>
     <br><hr>
     <div id="end" >
       <table class="center">
-        <tr><td><h3 class="prod_text3">MDM</h3></td></tr>
+        <tr><td><h3 class="prod_text3" style="width: 100%;">M.D.M. S.n.c. <br></h3><h4> di Danelutti Maurizio e C.</h4></td></tr>
         <tr><td>
           <h4 class="prod_text2">
           <b>COME TROVARCI</b><br>

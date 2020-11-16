@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="Description" content="la storia dell'azienda artigiana mdm (mdmsnc), produzione di divani a forma di auto, fusti di divani e montaggio. Falegnami/falegnameria vicino a Udine, Treppo Grande">
+    <meta name="Description" content="la storia dell'azienda artigiana mdm (mdmsnc), produzione di divani a forma di auto, telai di divani e montaggio. Falegnami/falegnameria vicino a Udine, Treppo Grande">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/cccae52293.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-66NHCKN3NE"></script>
@@ -31,15 +31,19 @@
       <div id="Logo">
         <img id="a" alt="Logo" src="Immagine 2020-09-24 192646.png">
       </div>
+      <div id="Nome">
+        M.D.M. S.n.c. <br> di Danelutti Maurizio e C.
+      </div>
       <div id="Dashboard_table">
         <table class="Dash_table">
           <tr>
-            <td><a href="#" class="tool">Home</a></td>
+            <td><a href="home.html" class="tool">Home</a></td>
             <td><a href="chi siamo.html" class="tool">Chi siamo</a></td>
             <td><a href="prodotti.html" class="tool">Prodotti</a></td>
+            <td><a href="I nostri telai.html" class="tool">I nostri telai</a></td>
             <td><a href="contatti.html" class="tool">Contatti</a></td>
           </tr>
-          <tr><td><div id="lineetta"></div></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td><div id="lineetta"></div></td></tr>
         </table>
       </div>
     </div>
@@ -60,28 +64,29 @@
 </div> -->
     <script>
     if($(window).width() < 750) {
-        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='Logo' src='Immagine 2020-09-24 192646.png'></a></div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'</i></a></div>";
+        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='Logo' src='Immagine 2020-09-24 192646.png'></a></div><div id='Nome_2'><b>M.D.M. S.n.c.</b> <br> di Danelutti Maurizio e C.</div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='I nostri telai.html' class='list'>I nostri telai</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'</i></a></div>";
     } else {
-        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='Logo' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td></td><td><div id='lineetta'></div></td><td></td><td></td></tr></table></div>";
+        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='Logo' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Nome'><b>M.D.M. S.n.c.</b> <br> di Danelutti Maurizio e C.</div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='I nostri telai.html' class='tool'>I nostri telai</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td></td><td><div id='lineetta'></div></td><td></td><td></td></tr></table></div>";
     }
     $(window).on('resize', function() {
       if($(window).width() < 750) {
-        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='Logo' src='Immagine 2020-09-24 192646.png'></a></div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'></i></a></div>";
+        document.getElementById("Dashboard").innerHTML = "<div class='topnav'><div id='Logo_2'><a href='#' class='active'><img id='a' alt='Logo' src='Immagine 2020-09-24 192646.png'></a></div><div id='Nome_2'><b>M.D.M. S.n.c.</b> <br> di Danelutti Maurizio e C.</div><div id='myLinks'><a href='home.html' class='list'>Home</a><a href='chi siamo.html' class='list'>Chi siamo</a><a href='prodotti.html' class='list'>Prodotti</a><a href='I nostri telai.html' class='list'>I nostri telai</a><a href='contatti.html' class='list'>Contatti</a></div><a href='javascript:void(0);' class='icon' onclick='myFunction()'><i class='fa fa-bars' style='padding:20px'></i></a></div>";
       } else {
-        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='Logo' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td></td><td><div id='lineetta'></div></td><td></td><td></td></tr></table></div>";
+        document.getElementById("Dashboard").innerHTML = "<div id='Logo'><img id='a' alt='Logo' style='padding-top: 16px;' src='Immagine 2020-09-24 192646.png'></div><div id='Nome'><b>M.D.M. S.n.c.</b> <br> di Danelutti Maurizio e C.</div><div id='Dashboard_table'><table class='Dash_table'><tr><td><a href='home.html' class='tool'>Home</a></td><td><a href='chi siamo.html' class='tool'>Chi siamo</a></td><td><a href='prodotti.html' class='tool'>Prodotti</a></td><td><a href='I nostri telai.html' class='tool'>I nostri telai</a></td><td><a href='contatti.html' class='tool'>Contatti</a></td></tr><tr><td></td><td><div id='lineetta'></div></td><td></td><td></td></tr></table></div>";
       }
     })
     </script>
     <div id="chi_siamo">
       <h1 style="margin-top: 25px;">Chi siamo</h1>
       <img id="esterni" alt="Foto azienda esterno" src="fed09024-8932-4b77-b9ac-3345ede2e0ac.jpg">
-      <br><h2><font family="Raleway" id="nstrz" style="font-weight: 100;">Questa è la nostra zienda bla bla bla bla bla blackbla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</font></h2>
+      <br><h2><font family="Raleway" id="nstrz" style="font-weight: 100; line-height: 40px;">La falegnameria M.D.M. s.n.c di Danelutti Maurizio e C. svolge la sua attività a Treppo Grande, paesino al centro del Friuli Venezia Giulia; è specializzata nella costruzione di TELAI per l’imbottito quali divani e poltrone in serie ma anche su progetto per pezzi su misura.<br><br>Come Carsofa propone un nuovo prodotto di nicchia, il DIVANO-AUTO.
+</font></h2>
     </div>
     <br>
     <div id="end">
       <hr>
       <table class="center">
-        <tr><td><h3 class="prod_text3">MDM</h3></td></tr>
+        <tr><td><h3 class="prod_text3" style="width: 100%;">M.D.M. S.n.c. <br></h3><h4> di Danelutti Maurizio e C.</h4></td></tr>
         <tr><td>
           <h4 class="prod_text2">
           <b>COME TROVARCI</b><br>
