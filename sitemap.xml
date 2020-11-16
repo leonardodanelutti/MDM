@@ -9,22 +9,27 @@
 
 <url>
   <loc>https://mdmsnc.it/home.html</loc>
-  <lastmod>2020-11-10T15:35:33+00:00</lastmod>
+  <lastmod>2020-11-16T16:36:35+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://mdmsnc.it/chi%20siamo.html</loc>
-  <lastmod>2020-11-10T15:35:33+00:00</lastmod>
+  <lastmod>2020-11-16T16:36:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mdmsnc.it/prodotti.html</loc>
-  <lastmod>2020-11-10T15:35:33+00:00</lastmod>
+  <lastmod>2020-11-16T16:36:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mdmsnc.it/I%20nostri%20telai.html</loc>
+  <lastmod>2020-11-16T16:36:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mdmsnc.it/contatti.html</loc>
-  <lastmod>2020-11-10T15:35:33+00:00</lastmod>
+  <lastmod>2020-11-16T16:36:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
